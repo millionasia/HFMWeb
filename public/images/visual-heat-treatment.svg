@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Metal heat treatment illustration">
+  <defs>
+    <linearGradient id="steel" x1="0" x2="1">
+      <stop offset="0" stop-color="#263234"/>
+      <stop offset="1" stop-color="#718287"/>
+    </linearGradient>
+    <radialGradient id="heat" cx=".5" cy=".52" r=".32">
+      <stop offset="0" stop-color="#ffd27c"/>
+      <stop offset=".48" stop-color="#d7932d"/>
+      <stop offset="1" stop-color="#0e7f81" stop-opacity=".08"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#f6faf9"/>
+  <rect y="372" width="800" height="128" fill="#d8e1df"/>
+  <path d="M150 326h500v58H150z" fill="#172022"/>
+  <path d="M228 162h344v164H228z" fill="url(#steel)"/>
+  <circle cx="400" cy="245" r="118" fill="url(#heat)"/>
+  <path d="M287 246c0-62 50-112 112-112s112 50 112 112-50 112-112 112-112-50-112-112Z" fill="none" stroke="#4fb7bb" stroke-width="14"/>
+  <path d="M263 246h274" stroke="#172022" stroke-width="34" stroke-linecap="round"/>
+  <path d="M260 246h280" stroke="#b96d36" stroke-width="12" stroke-linecap="round"/>
+  <path d="M184 130h92v196h-92zM524 130h92v196h-92z" fill="#243033"/>
+  <path d="M205 158h50v70h-50zM545 158h50v70h-50z" fill="#eef4f3"/>
+  <path d="M202 290h58M542 290h58" stroke="#4fb7bb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M164 404h472" stroke="#172022" stroke-opacity=".14" stroke-width="9" stroke-linecap="round"/>
+</svg>

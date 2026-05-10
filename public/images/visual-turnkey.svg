@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Turnkey production line illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7faf8"/>
+      <stop offset="1" stop-color="#dfe9e7"/>
+    </linearGradient>
+    <linearGradient id="machine" x1="0" x2="1">
+      <stop offset="0" stop-color="#172022"/>
+      <stop offset="1" stop-color="#425053"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <path d="M0 388h800v112H0z" fill="#cfdad8"/>
+  <path d="M84 342h632" stroke="#8ea0a1" stroke-width="12" stroke-linecap="round"/>
+  <path d="M120 330h120v46H120zM300 330h120v46H300zM480 330h120v46H480z" fill="#ffffff" stroke="#879496" stroke-width="5"/>
+  <path d="M120 188h160v140H120z" fill="url(#machine)"/>
+  <path d="M314 136h172v194H314z" fill="#243033"/>
+  <path d="M520 174h154v156H520z" fill="url(#machine)"/>
+  <path d="M150 214h86v78h-86zM344 166h112v70H344zM552 204h88v86h-88z" fill="#eef4f3"/>
+  <path d="M356 255h88M356 276h88M552 305h88M150 306h86" stroke="#0e7f81" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="401" cy="328" r="12" fill="#d7932d"/>
+  <circle cx="458" cy="328" r="7" fill="#4fb7bb"/>
+  <path d="M305 107h190l24 29H281z" fill="#0e7f81"/>
+  <path d="M92 392h616" stroke="#172022" stroke-opacity=".16" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 90h616M92 122h616" stroke="#ffffff" stroke-width="4" stroke-opacity=".8"/>
+</svg>

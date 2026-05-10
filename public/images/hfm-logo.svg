@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" role="img" aria-labelledby="title desc">
+  <title id="title">賀民企業有限公司</title>
+  <desc id="desc">Redrawn scalable logo for Her Min High Frequency Preheating Machine Co., Ltd.</desc>
+  <defs>
+    <style>
+      .red{fill:#d71920}.blue{fill:#004097}.stroke-red{stroke:#d71920}.stroke-blue{stroke:#004097}
+      .zh{font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;font-weight:800}
+      .en{font-family:Arial,"Helvetica Neue",sans-serif;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="760" height="150" fill="#fff"/>
+  <g transform="translate(18 10)">
+    <circle cx="55" cy="55" r="48" fill="#fff" class="stroke-red" stroke-width="4"/>
+    <path d="M17 53h76M23 36h64M30 22h50" class="stroke-red" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M21 53c7-25 22-39 34-39s27 14 34 39M34 53c3-26 11-39 21-39s18 13 21 39M55 15v78" class="stroke-red" stroke-width="2.5" fill="none"/>
+    <path d="M21 53l34 40 34-40M36 53l19 40 19-40" class="stroke-red" stroke-width="2.5" fill="none"/>
+    <circle cx="55" cy="55" r="10" fill="#fff" class="stroke-red" stroke-width="2.5"/>
+    <text x="31" y="74" class="zh red" font-size="20">賀</text>
+    <text x="60" y="74" class="zh red" font-size="20">民</text>
+    <text x="29" y="123" class="en red" font-size="17">Her Min</text>
+  </g>
+
+  <g transform="translate(126 24)">
+    <text x="0" y="45" class="zh blue" font-size="48" letter-spacing="10">賀民企業有限公司</text>
+    <rect x="2" y="63" width="560" height="5" class="blue"/>
+    <text x="5" y="95" class="en blue" font-size="23">Her Min High Frequency Preheating Machine Co., Ltd.</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#ffffff"/>
+  <circle cx="32" cy="29" r="23" fill="#fff" stroke="#d71920" stroke-width="3"/>
+  <path d="M12 28h40M16 20h32M21 13h22M15 28c4-13 11-20 17-20s13 7 17 20M23 28c2-13 5-20 9-20s7 7 9 20M32 8v43M15 28l17 23 17-23M24 28l8 23 8-23" fill="none" stroke="#d71920" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="32" cy="29" r="5" fill="#fff" stroke="#d71920" stroke-width="1.8"/>
+  <text x="18" y="42" fill="#d71920" font-family="Arial, sans-serif" font-size="10" font-weight="700">HFM</text>
+</svg>
