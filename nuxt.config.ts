@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   experimental: {
     appManifest: false
   },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@vercel/analytics'],
   css: ['~/assets/css/tailwind.css'],
   postcss: {
     plugins: {
@@ -22,6 +22,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#0f2f33' }
       ],
       link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
         { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }
       ]
     }
