@@ -2,6 +2,7 @@
 import { Mail, MapPin, Phone } from 'lucide-vue-next'
 
 const { data, locale } = useHfm()
+const { assetPath } = useAssetPath()
 const site = computed(() => data.value.site)
 const sitemap = computed(() => data.value.sitemap)
 </script>
@@ -12,7 +13,7 @@ const sitemap = computed(() => data.value.sitemap)
       <div class="grid gap-10 lg:grid-cols-[1.05fr_1.95fr]">
         <div>
           <NuxtLink to="/" class="focus-ring inline-flex rounded-sm bg-white p-2" :aria-label="site.name">
-            <img :src="site.logo" :alt="site.logoAlt" class="h-14 w-72 object-contain object-left">
+            <img :src="assetPath(site.logo)" :alt="site.logoAlt" class="h-14 w-72 object-contain object-left">
           </NuxtLink>
           <p class="mt-5 max-w-xl text-sm leading-7 text-white/72">
             {{ site.summary }}

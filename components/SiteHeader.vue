@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-vue-next'
 
 const route = useRoute()
 const { data, locale, setLocale } = useHfm()
+const { assetPath } = useAssetPath()
 const isOpen = ref(false)
 
 const site = computed(() => data.value.site)
@@ -24,7 +25,7 @@ watch(() => route.fullPath, () => {
       <div class="flex h-[4.75rem] items-center justify-between gap-4">
         <NuxtLink to="/" class="focus-ring flex min-w-0 items-center rounded-sm" :aria-label="site.name">
           <img
-            :src="site.logo"
+            :src="assetPath(site.logo)"
             :alt="site.logoAlt"
             class="h-12 w-[14.5rem] max-w-[58vw] object-contain object-left sm:h-14 sm:w-[20rem]"
           >

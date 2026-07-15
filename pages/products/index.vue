@@ -1,5 +1,6 @@
 <script setup>
 const { data, locale } = useHfm()
+const { assetPath } = useAssetPath()
 
 const site = computed(() => data.value.site)
 const categories = computed(() => data.value.productCategories)
@@ -54,7 +55,7 @@ useHead(() => ({
           <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div class="lg:sticky lg:top-28">
               <img
-                :src="category.image"
+                :src="assetPath(category.image)"
                 :alt="category.name"
                 class="aspect-[16/10] w-full rounded-sm border border-hfm-mist object-cover shadow-sm"
                 loading="lazy"

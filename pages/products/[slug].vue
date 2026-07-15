@@ -3,6 +3,7 @@ import { ArrowLeft, CheckCircle2 } from 'lucide-vue-next'
 
 const route = useRoute()
 const { data, locale } = useHfm()
+const { assetPath } = useAssetPath()
 
 const product = computed(() => data.value.getProduct(String(route.params.slug)))
 const category = computed(() => product.value ? data.value.getCategory(product.value.category) : null)
@@ -46,7 +47,7 @@ useHead(() => ({
           </p>
         </div>
         <img
-          :src="product.image"
+          :src="assetPath(product.image)"
           :alt="product.name"
           class="aspect-[16/10] w-full rounded-sm border border-hfm-mist object-contain bg-white p-4 shadow-machine"
         >

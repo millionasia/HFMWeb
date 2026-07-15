@@ -2,6 +2,7 @@
 import { ArrowRight, CheckCircle2 } from 'lucide-vue-next'
 
 const { data, locale } = useHfm()
+const { assetPath } = useAssetPath()
 
 const site = computed(() => data.value.site)
 const highlights = computed(() => data.value.highlights)
@@ -14,7 +15,7 @@ useHead(() => ({
     { name: 'description', content: site.value.seoDescription },
     { property: 'og:title', content: `${site.value.name} | ${site.value.tagline}` },
     { property: 'og:description', content: site.value.seoDescription },
-    { property: 'og:image', content: site.value.heroImage }
+    { property: 'og:image', content: assetPath(site.value.heroImage) }
   ]
 }))
 </script>
@@ -23,7 +24,7 @@ useHead(() => ({
   <div>
     <section class="relative isolate min-h-[76vh] overflow-hidden bg-hfm-graphite">
       <img
-        :src="site.heroImage"
+        :src="assetPath(site.heroImage)"
         :alt="site.tagline"
         class="absolute inset-0 h-full w-full object-cover"
       >

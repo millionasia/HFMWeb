@@ -1,6 +1,8 @@
 <script setup>
 import { ArrowUpRight } from 'lucide-vue-next'
 
+const { assetPath } = useAssetPath()
+
 defineProps({
   item: {
     type: Object,
@@ -20,7 +22,7 @@ defineProps({
   >
     <div class="aspect-[16/10] overflow-hidden bg-hfm-mist">
       <img
-        :src="item.image"
+        :src="assetPath(item.image)"
         :alt="item.name"
         class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         loading="lazy"
