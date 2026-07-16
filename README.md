@@ -65,6 +65,48 @@ tomcat/webapps/hfm/
 
 注意：不要直接用 `file://` 開啟 `dist/index.html` 當作正式測試，因為圖片、CSS、JS 會受到網站路徑影響。請使用 Tomcat 或靜態網站伺服器測試。
 
+## Environment Export Scripts
+
+專案提供兩支 PowerShell script，讓測試環境與正式環境可以輸出到不同資料夾。
+
+測試環境預設輸出到 `dist_staging/`，Base URL 預設為 `/hfm-staging/`：
+
+```powershell
+.\scripts\generate-staging.ps1
+```
+
+也可以透過 pnpm 執行：
+
+```powershell
+corepack pnpm generate:staging
+```
+
+正式環境預設輸出到 `dist/`，Base URL 預設為 `/`：
+
+```powershell
+.\scripts\generate-production.ps1
+```
+
+也可以透過 pnpm 執行：
+
+```powershell
+corepack pnpm generate:production
+```
+
+如果正式環境不是掛在根目錄，而是掛在 Tomcat 子路徑，例如 `/hfm/`，請這樣指定：
+
+```powershell
+.\scripts\generate-production.ps1 -BaseUrl "/hfm/"
+```
+
+如果測試環境路徑不同，也可以指定：
+
+```powershell
+.\scripts\generate-staging.ps1 -BaseUrl "/hfm-test/" -OutputDir "dist_staging"
+```
+
+重點是：不同環境若有不同網址路徑，必須分別 generate，不能只改資料夾名稱。因為 HTML 內的圖片、CSS、JS 與頁面連結會依照 `NUXT_APP_BASE_URL` 被寫入不同路徑。
+
 ## Build Check
 
 若只要檢查 Nuxt build 是否成功，可執行：

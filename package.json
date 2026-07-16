@@ -6,6 +6,8 @@
     "dev": "nuxt dev --host 127.0.0.1 --port 3001",
     "build": "nuxt build",
     "generate": "nuxt generate",
+    "generate:staging": "powershell -ExecutionPolicy Bypass -File ./scripts/generate-staging.ps1",
+    "generate:production": "powershell -ExecutionPolicy Bypass -File ./scripts/generate-production.ps1",
     "preview": "nuxt preview --host 127.0.0.1 --port 3001"
   },
   "dependencies": {
