@@ -44,11 +44,13 @@ const raw = {
       'HFM manufactures high-frequency plastic welding machines, metal heating machines, RF drying machines and turnkey equipment, with custom-built systems available.'
     ),
     founded: '1981',
-    email: 'herminhighfrequency@gmail.com',
-    phone: '886-3-349-1067, 886-3-349-1068',
+    email: 'paul438438@gmail.com',
+    emails: ['paul438438@gmail.com', 'herminhighfrequency@gmail.com'],
+    phone: localized('03-349-1067 or 03-349-1068', '886-3-349-1067 or 886-3-349-1068'),
     telLinks: ['+88633491067', '+88633491068'],
-    fax: '886-3-349-8823',
-    address: localized('新北市樹林區三俊街 159 巷 13 號', 'NO. 13, LANE 159, SAN CHUN ST. SHULIN TAIPEI HSIEN TAIWAN, R. O. C.'),
+    fax: localized('03-349-8823', '886-3-349-8823'),
+    address: localized('333 桃園市龜山區豐榮街一巷161之13號', 'No.161-13, Ln. 1, Fengrong St., Guishan Township, Taoyuan County 333, Taiwan (R.O.C.)'),
+    contactPerson: localized('黃寶萱(Paul)', 'Paul Huang'),
     heroImage: '/images/products/hfm-factory.jpg',
     logo: '/images/hfm-logo.svg'
   },
@@ -583,7 +585,7 @@ export class MillionAsia {
         title: this.t(localized('SEO 與服務', 'SEO and Service')),
         links: [
           { label: this.t(localized('網站地圖', 'Sitemap')), to: '/sitemap' },
-          { label: this.t(localized('聯絡表單', 'Contact Form')), to: '/contact#inquiry' }
+          { label: this.t(localized('聯絡資訊', 'Contact Information')), to: '/contact#inquiry' }
         ]
       }
     ]
