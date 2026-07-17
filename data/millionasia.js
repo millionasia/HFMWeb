@@ -45,7 +45,7 @@ const raw = {
     ),
     founded: '1981',
     email: 'paul438438@gmail.com',
-    emails: ['paul438438@gmail.com', 'herminhighfrequency@gmail.com'],
+    emails: ['paul438438@gmail.com'],
     phone: localized('03-349-1067 or 03-349-1068', '886-3-349-1067 or 886-3-349-1068'),
     telLinks: ['+88633491067', '+88633491068'],
     fax: localized('03-349-8823', '886-3-349-8823'),
