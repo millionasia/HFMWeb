@@ -21,7 +21,7 @@ const sitemap = computed(() => data.value.sitemap)
           <dl class="mt-6 grid gap-3 text-sm text-white/76">
             <div class="flex gap-3">
               <MapPin class="mt-0.5 h-4 w-4 flex-none text-hfm-cyan" />
-              <dd>{{ site.address }}</dd>
+              <dd>{{ site.companyAddressLabel }}: {{ site.companyAddress }}</dd>
             </div>
             <div class="flex gap-3">
               <Phone class="mt-0.5 h-4 w-4 flex-none text-hfm-cyan" />
@@ -36,8 +36,7 @@ const sitemap = computed(() => data.value.sitemap)
 
         <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
           <div v-for="group in sitemap" :key="group.title">
-            <h2 class="text-sm font-bold text-white">{{ group.title }}</h2>
-            <ul class="mt-4 space-y-3">
+            <ul class="space-y-3">
               <li v-for="link in group.links" :key="link.to">
                 <NuxtLink
                   :to="link.to"

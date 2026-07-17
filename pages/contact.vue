@@ -17,6 +17,10 @@ const contact = computed(() => {
     company: isZh
       ? '賀民企業有限公司'
       : 'Min High Frequency Preheating Machine Co., Ltd.',
+    companyAddressLabel: isZh ? '公司地址' : 'COMPANY',
+    companyAddress: isZh
+      ? '238新北市樹林區三俊街 159 巷 13 號'
+      : 'NO.13, LANE 159, SANJUN ST. SHULIN DIST., NEW TAIPEI CITY 238, TAIWAN. (R.O.C.)',
     addressLabel: isZh ? '工廠地址' : 'FACTORY ADDRESS',
     address: isZh
       ? '333 桃園市龜山區豐榮街一巷161之13號'
@@ -70,6 +74,12 @@ useHead(() => ({
           </h2>
 
           <dl class="mt-8 grid gap-6 text-sm text-hfm-charcoal">
+            <div class="grid gap-3 sm:grid-cols-[1.75rem_8rem_1fr]">
+              <MapPin class="h-5 w-5 text-hfm-teal" />
+              <dt class="font-black text-hfm-graphite">{{ contact.companyAddressLabel }}</dt>
+              <dd class="leading-7">{{ contact.companyAddress }}</dd>
+            </div>
+
             <div class="grid gap-3 sm:grid-cols-[1.75rem_8rem_1fr]">
               <MapPin class="h-5 w-5 text-hfm-teal" />
               <dt class="font-black text-hfm-graphite">{{ contact.addressLabel }}</dt>

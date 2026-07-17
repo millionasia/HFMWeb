@@ -49,6 +49,8 @@ const raw = {
     phone: localized('03-349-1067 or 03-349-1068', '886-3-349-1067 or 886-3-349-1068'),
     telLinks: ['+88633491067', '+88633491068'],
     fax: localized('03-349-8823', '886-3-349-8823'),
+    companyAddressLabel: localized('公司地址', 'COMPANY'),
+    companyAddress: localized('238新北市樹林區三俊街 159 巷 13 號', 'NO.13, LANE 159, SANJUN ST. SHULIN DIST., NEW TAIPEI CITY 238, TAIWAN.'),
     address: localized('333 桃園市龜山區豐榮街一巷161之13號', 'No.161-13, Ln. 1, Fengrong St., Guishan Township, Taoyuan County 333, Taiwan (R.O.C.)'),
     contactPerson: localized('黃寶萱(Paul)', 'Paul Huang'),
     heroImage: '/images/products/hfm-factory.jpg',
