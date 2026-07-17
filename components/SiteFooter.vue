@@ -52,11 +52,25 @@ const sitemap = computed(() => data.value.sitemap)
 
       <div class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between">
         <p>Copyright © {{ new Date().getFullYear() }} {{ site.legalName }}</p>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 sm:justify-end">
           <NuxtLink to="/sitemap" class="focus-ring rounded-sm transition hover:text-hfm-cyan">
             {{ locale === 'zh' ? '網站地圖' : 'Sitemap' }}
           </NuxtLink>
-          <span>{{ site.designedBy }}</span>
+          <span class="inline-flex flex-wrap items-baseline gap-x-1 gap-y-0.5">
+            <span>{{ site.designedBy.prefix }}</span>
+            <a
+              :href="site.designedBy.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="focus-ring rounded-sm font-medium text-white transition hover:text-hfm-cyan"
+              :title="site.designedBy.tagline"
+            >
+              {{ site.designedBy.name }}
+            </a>
+            <span class="basis-full text-xs text-white/45 sm:basis-auto sm:pl-1">
+              {{ site.designedBy.tagline }}
+            </span>
+          </span>
         </div>
       </div>
     </div>

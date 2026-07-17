@@ -33,7 +33,12 @@ const raw = {
     name: localized('賀民企業高週波', 'HFM'),
     legalName: localized('賀民企業有限公司', 'Her Min High Frequency Preheating Machine Co., Ltd.'),
     logoAlt: localized('賀民企業有限公司標誌', 'Her Min company logo'),
-    designedBy: localized('米亞科技設計', 'Designed by Million Asia'),
+    designedBy: {
+      prefix: 'Powered by',
+      name: 'AgileWeb',
+      tagline: 'AI-Driven Website Builder',
+      url: 'https://www.millionasia.com/product.jsp'
+    },
     tagline: localized('高週波預熱、熔接、乾燥與金屬加熱設備製造', 'High-frequency preheating, welding, drying and metal heating equipment'),
     summary: localized(
       '賀民企業自 1981 年創立於台灣，專精高週波設備設計製造，提供塑膠熔接、乾燥、金屬熱處理與整廠設備承包服務。',
